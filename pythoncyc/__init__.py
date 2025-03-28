@@ -44,14 +44,14 @@ about how to use PythonCyc.
 from . PGDB import PGDB
 from . PTools import sendQueryToPTools
 
-def select_organism(orgid):
+def select_organism(orgid:str) -> PGDB:
     """
     Select an organism PGDB based on its unique organism id.
        orgid: string, the unique organism id in Pathway Tools (e.g., ecoli, meta).
     """
     return PGDB(orgid)
 
-def so(orgid):
+def so(orgid:str) -> PGDB:
     """ A synonym of method select_organism. """
     return select_organism(orgid)
 
