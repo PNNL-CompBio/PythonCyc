@@ -75,7 +75,7 @@ class PFrame():
 
     """
 
-    def __init__(self, frameid:str, pgdb:str, getFrameData: bool=False, isClass: bool = False) -> None:
+    def __init__(self, frameid:str, pgdb, getFrameData: bool=False, isClass: bool = False) -> None:
         """
         The PFrame is created assuming that the frameid is coercible to a frame in the PGDB.
         In particular, the frameid string is not converted and must have the appropriate camel case.
